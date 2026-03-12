@@ -3,7 +3,7 @@ title: Calosci Matteo - PhD Student
 author: Calosci Matteo
 # shortbio: Short bio
 description-meta: PhD Student UniFi
-og-url: https://basicpage.github.io
+og-url: https://CalosciMatteo.github.io
 location: Florence
 email: matteo.calosci@unifi.it
 clickable-email: false
