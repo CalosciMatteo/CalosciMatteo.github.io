@@ -1,11 +1,14 @@
 :root {
-  --bg: #fbfdff;
+  --bg: rgb(1, 2, 51);         
   --headerbg: transparent;
   --navbg: transparent;
   --mainbg: transparent;
   --footerbg: transparent;
-  --navlink: #56473d;
-  --navborder: #56473d;
+  --navlink: #c7f9ccff;      /* --tea-green */
+  --navborder: #05668dff;    /* --baltic-blue */
+  --text-main: #c7f9ccff;    /* --tea-green */
+  --accent: #80ed99ff;       /* --light-green */
+  --link-hover: #57cc99ff;   /* --emerald */
 }
 
 /*** GENERAL ***/
@@ -25,6 +28,7 @@ html {
 
 body {
   background: var(--bg);
+  color: var(--text-main);
   min-height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 12pt;
@@ -34,12 +38,12 @@ body {
 }
 
 a {
-  color: #3a6eb1;
+  color: var(--accent);
   text-decoration: none;
 }
 
 a:active, a:hover {
-  color: #71acf8;
+  color: var(--link-hover);
   outline: 0;
 }
 
@@ -58,13 +62,11 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* padding: 15px; */
   background: var(--headerbg);
   gap: 5px;
 }
 
 header img {
-  /* flex: 1; */
   max-width: 200px;
 }
 
@@ -103,8 +105,8 @@ header div.icons a:hover[title]::after {
   display: inline-block;
   padding: 0.2em 0.6em;
   white-space: nowrap;
-  background-color: #555;
-  color: #fff;
+  background-color: var(--navborder);
+  color: var(--tea-green);
   font-style: normal;
   font-family: sans-serif;
   font-size: 0.8em;
@@ -151,8 +153,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--navlink);
-  border-bottom: 3px solid var(--navlink);
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
 }
 
 /*** MAIN ***/
@@ -162,7 +164,6 @@ main {
   margin: auto;
   max-width: 920px;
   background: var(--mainbg);
-  /* padding: 15px; */
   padding-top: 30px;
 }
 
@@ -185,7 +186,6 @@ footer {
   margin: auto;
   max-width: 920px;
   background: var(--footerbg);
-  /* padding: 15px; */
   padding-top: 30px;
   border-top: 1px solid var(--navborder);
 }
@@ -193,13 +193,13 @@ footer {
 /* KBD (keyboard) */
 
 kbd {
-  background-color: #eee;
+  background-color: var(--baltic-blue);
   border-radius: 3px;
-  border: 1px solid #b4b4b4;
+  border: 1px solid var(--emerald);
   box-shadow:
-    0 1px 1px rgba(0, 0, 0, 0.2),
-    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-  color: #333;
+    0 1px 1px rgba(0, 0, 0, 0.5),
+    0 2px 0 0 rgba(255, 255, 255, 0.1) inset;
+  color: var(--tea-green);
   display: inline-block;
   font-size: 0.85em;
   font-weight: 700;
@@ -211,83 +211,53 @@ kbd {
 /* ALERTS */
 
 div.tip {
-  border-left: 4px solid rgb(48, 148, 48);
+  border-left: 4px solid var(--emerald);
   padding-left: 10px;
 }
 
 div.tip > div.title p {
-  color: rgb(48, 148, 48);
+  color: var(--emerald);
   font-weight: bold;
 }
 
-div.tip > div.title p::before {
-  font-family: "Font Awesome 6 Free";
-  content: '\f0eb';
-  margin-right: 4px;
-}
-
 div.important {
-  border-left: 4px solid rgb(115, 32, 136);
+  border-left: 4px solid var(--accent);
   padding-left: 10px;
 }
 
 div.important > div.title p {
-  color: rgb(115, 32, 136);
+  color: var(--accent);
   font-weight: bold;
 }
 
-div.important > div.title p::before {
-  font-family: "Font Awesome 6 Free";
-  content: '\f27a';
-  margin-right: 4px;
-}
-
 div.warning {
-  border-left: 4px solid rgb(233, 170, 46);
+  border-left: 4px solid #e9aa2e; /* Kept standard for visibility, or use var(--accent) */
   padding-left: 10px;
 }
 
 div.warning > div.title p {
-  color: rgb(233, 170, 46);
+  color: #e9aa2e;
   font-weight: bold;
 }
 
-div.warning > div.title p::before {
-  font-family: "Font Awesome 6 Free";
-  content: '\f071';
-  margin-right: 4px;
-}
-
 div.caution {
-  border-left: 4px solid rgb(233, 46, 83);
+  border-left: 4px solid #e92e53;
   padding-left: 10px;
 }
 
 div.caution > div.title p {
-  color: rgb(233, 46, 83);
+  color: #e92e53;
   font-weight: bold;
 }
 
-div.caution > div.title p::before {
-  font-family: "Font Awesome 6 Free";
-  content: '\f06a';
-  margin-right: 4px;
-}
-
 div.note {
-  border-left: 4px solid rgb(46, 93, 233);
+  border-left: 4px solid var(--baltic-blue);
   padding-left: 10px;
 }
 
 div.note > div.title p {
-  color: rgb(46, 93, 233);
+  color: var(--baltic-blue);
   font-weight: bold;
-}
-
-div.note > div.title p::before {
-  font-family: "Font Awesome 6 Free";
-  content: '\f05a';
-  margin-right: 4px;
 }
 
 /* CLASSES */
@@ -298,7 +268,7 @@ div.note > div.title p::before {
 }
 
 section.paper {
-  border-left: 4px solid rgb(102, 102, 110);
+  border-left: 4px solid var(--baltic-blue);
   padding-left: 10px;
   margin-bottom: 10px;
 }
@@ -308,7 +278,7 @@ section.paper h3 {
 }
 
 section.paper p {
-  color: rgb(136, 136, 136);
+  color: var(--accent);
   margin: 0;
 }
 
@@ -325,13 +295,14 @@ div.files a {
   border-radius: 5px;
   padding: 4px;
   margin-right: 5px;
-  background: #e5e7e8;
-  color: #343d44;
+  background: var(--baltic-blue);
+  color: var(--tea-green);
   font-size: small;
 }
 
 div.files a:hover {
-  background: #91c3ea;
+  background: var(--emerald);
+  color: var(--deep-twilight);
   text-decoration: none;
 }
 
@@ -348,12 +319,12 @@ div.awards span {
   border-radius: 5px;
   padding: 4px;
   margin-right: 5px;
-  background: #F6ECD0;
-  color: #CF9C11;
+  background: var(--baltic-blue);
+  color: var(--light-green);
 }
 
 span.lastupdate {
-  color: #9e9d9d;
+  color: var(--baltic-blue);
 }
 
 @media screen and (min-width: 1000px) {

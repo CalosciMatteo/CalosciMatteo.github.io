@@ -9,7 +9,7 @@ clickable-email: false
 picture: img/profile.jpg
 picture-round: true
 side-by-side: true
-disable-dark-mode: false
+disable-dark-mode: true
 og-picture: https://CalosciMatteo.github.io/img/profile.jpg
 orcid: 0009-0001-5237-7980
 dblp: https://dblp.org/pid/400/4591.html
