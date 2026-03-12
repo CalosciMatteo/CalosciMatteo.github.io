@@ -1,7 +1,6 @@
 ---
 title: Calosci Matteo - PhD Student
 author: Calosci Matteo
-# shortbio: Short bio
 description-meta: PhD Student UniFi
 og-url: https://CalosciMatteo.github.io
 location: Florence
@@ -11,13 +10,9 @@ picture: img/profile.jpg
 picture-round: true
 side-by-side: true
 disable-dark-mode: false
-# pronouns: Pronouns
 og-picture: https://CalosciMatteo.github.io/img/profile.jpg
 orcid: 0009-0001-5237-7980
 dblp: https://dblp.org/pid/400/4591.html
-# scholar: https://scholar.google.com/
-# hal: https://hal.science/
-# mastodon: https://lipn.info
 github: CalosciMatteo
 ---
 
