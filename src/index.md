@@ -39,6 +39,14 @@ year: 2025
 url: https://ceur-ws.org/Vol-4039/paper04.pdf
 ```
 
+# Preprint
+``` yaml {.paper}
+title: Semantics for Hierarchy Builder with Shifters and Instances
+authors: "M. C., Cyril Cohen, Enrico Tassi, Paolo Torrini"
+year: 2026
+url: https://hal.science/hal-05590600v1
+```
+
 # Talks
 
 ``` yaml {.paper}
