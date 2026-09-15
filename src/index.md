@@ -66,3 +66,6 @@ title: "Hierarchy Builder: Semantic and Wrapping"
 venue: STAMP equip meeting, INRIA, Sophia Antipolis, France
 year: 2025
 ```
+
+## Curriculum Vitae
+You can download my full CV here: [(PDF)](cv.pdf)
