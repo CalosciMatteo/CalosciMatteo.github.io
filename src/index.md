@@ -68,4 +68,4 @@ year: 2025
 ```
 
 ## Curriculum Vitae
-You can download my full CV here: [(PDF)](cv.pdf)
+You can download my full CV here: [(PDF)](files/cv.pdf)
